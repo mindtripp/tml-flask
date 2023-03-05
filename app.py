@@ -5,10 +5,12 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     data = [
-        {'name': 'John', 'age': 35},
-        {'name': 'Jane', 'age': 28},
-        {'name': 'Bob', 'age': 42}
-    ]
+   {'first_name' : 'Michael', 'last_name' : 'Choi'},
+   {'first_name' : 'John', 'last_name' : 'Supsupin'},
+   {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+   {'first_name' : 'KB', 'last_name' : 'Tonel'}
+]
+
     return render_template('index.html', data=data)
 
 if __name__ == '__main__':
